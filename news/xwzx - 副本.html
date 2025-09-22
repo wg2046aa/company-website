@@ -1,0 +1,343 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="SPCM-APD, APD, Geiger, SPCM, 单光子计数模块, 量子通讯, 激光雷达, 荧光寿命" />
+  <meta name="description" content="SPCM-APD模块具有非常高的光灵敏度和较高的量子效率，主要应用于量子密钥、量子通讯、激光雷达等领域。" />
+  <title>北京和力达科技新闻中心 - 北京和力达科技有限公司</title>
+  
+  <!-- 引入Bootstrap及自定义样式 -->
+  <link href="../css/bootstrap.css" rel="stylesheet" />
+  <link href="../css/index.css" rel="stylesheet" />
+  
+  <!-- jQuery及Bootstrap JS -->
+  <script src="../js/bootstrap.jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/holder.js"></script>
+  <script src="../js/index.js"></script>
+  
+  <style>
+    /* 让html和body占满全屏高度，并使用Flex布局 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f5f5f5, #fff);
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    header, footer {
+      flex-shrink: 0;
+      background: #fff;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    /* 导航栏样式 */
+    .navbar-inverse {
+      background-color: #222;
+      border-color: #080808;
+      margin-bottom: 0;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+      color: #fff;
+    }
+    .navbar-inverse .navbar-nav > li.selected > a {
+      color: #ff0;
+    }
+    /* Logo区域，取消多余内边距 */
+    #logo.logo2 {
+      padding: 0;
+      border-bottom: 1px solid #eaeaea;
+    }
+    #logo.logo2 .container {
+      max-width: 990px;
+    }
+    #logo.logo2 img {
+      display: block;
+      margin: 0;
+    }
+    /* Banner样式：高度缩小，取消负边距 */
+    .main_banner {
+      background: url(../img/news_main_banner.jpg) top center no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 120px;
+      margin-top: 0;
+    }
+    /* 新闻容器：居中显示 */
+    .news-container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    /* 新闻卡片样式 */
+    .news-card {
+      margin-bottom: 30px;
+      background: #fff;
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      overflow: hidden;
+    }
+    .news-card .card-header {
+      padding: 15px;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #eaeaea;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .news-card .card-body {
+      padding: 15px;
+      font-size: 14px;
+      line-height: 1.8;
+      color: #555;
+    }
+    .news-card .news-time {
+      font-size: 14px;
+      color: #999;
+    }
+    .news-card .news-img {
+      width: 100%;
+      max-width: 221px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      display: block;
+      margin: 0 auto;
+    }
+    .news-card .news-content {
+      padding: 10px 20px;
+    }
+    @media (min-width: 768px) {
+      .news-card .row {
+        display: flex;
+      }
+      .news-card .news-img-col {
+        flex: 0 0 233px;
+      }
+      .news-card .news-text-col {
+        flex: 1;
+        padding-left: 20px;
+      }
+    }
+    /* 添加虚化背景层 */
+    #blur-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/news_bg.jpg);
+      background-size: cover;
+      background-position: center;
+      filter: blur(10px);
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+  <!-- 虚化底图 -->
+  <div id="blur-background"></div>
+  
+  <!-- 页头：参考 cpdz.html 的导航、Logo和Banner -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 导航 -->
+        <nav class="navbar navbar-inverse" role="navigation">
+          <div class="container" style="max-width: 1065px;">
+            <div class="row">
+              <div class="navbar-collapse">
+                <ul class="nav navbar-nav center-block col-md-12 col-sm-12 col-xs-12">
+                  <li class="dropdown a_index"><a href="../index.html">首页</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../about_us/gywm.html">关于我们</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../news/xwzx.html">新闻中心</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../products/product.html">产品中心</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../custom_design/cpdz.html">产品定制</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../service_and_support/fwyzc.html">服务与支持</a></li>
+                  <li class="dropdown navbar-drowdown-width"><a href="../contact_us/lxwm.html">联系我们</a></li>
+                  <li class="dropdown a_weixin">
+                    <a href="javascript:void(0);">
+                      <img id="weixin_icon_nav" src="../img/wxicon.png" onclick="weixin_icon_nav_click();"
+                        onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_nav').className='weixin_in_nav';"
+                        onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_nav').className='weixin_nav';" />
+                    </a>
+                    <div id="weixin_nav" class="weixin_nav">
+                      <div class="weixin_arrow_nav"></div>
+                      <img src="../img/HOLITA_weixin.jpg" width="100" height="100">
+                    </div>
+                  </li>
+                  <script>
+                    var i = 1;
+                    function weixin_icon_nav_click() {
+                      if (i % 2 != 0) {
+                        document.getElementById('weixin_nav').style.display = 'inherit';
+                      } else {
+                        document.getElementById('weixin_nav').style.display = '';
+                      }
+                      i++;
+                    }
+                  </script>
+                  <li class="dropdown a_cn_en"><a href="#"><img src="../img/cn.png" title="中文" alt="中文" /></a></li>
+                  <li class="dropdown a_cn_en"><a href="../en/index.html"><img src="../img/en.png" title="English" alt="English" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- Logo -->
+        <div id="logo" class="logo2">
+          <div class="container" style="max-width: 990px;">
+            <div class="row">
+              <div class="col-xs-12">
+                <a href="../index.html">
+                  <img alt="logo" src="../img/product/网站用图/和力达LOGO.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Banner -->
+        <div class="container-fluid">
+          <div class="row">
+            <figure class="main_banner"></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主体内容：新闻列表 -->
+  <main>
+    <div class="news-container">
+      <!-- 新闻卡片 1 -->
+      <div class="news-card">
+        <div class="card-header">
+          <a data-toggle="collapse" data-parent="#accordion" href="#news8">
+            <span>2019.01.08</span> 北京和力达科技有限公司倍增管（PMT）型单光子探测器进入批量生产阶段，欢迎前来订购
+          </a>
+        </div>
+        <div id="news8" class="collapse in">
+          <div class="card-body">
+            <div class="row">
+              <div class="news-img-col">
+                <a href="#">
+                  <img class="news-img img-responsive" src="../img/product/SPCM-01.png" alt="SPCM-01">
+                </a>
+              </div>
+              <div class="news-text-col">
+                <p class="news-time">2019年1月8日</p>
+                <p>北京和力达科技推出SPCM-01型单光子探测器，是基于PMT的单光子探测器。</p>
+                <p>该探测器具有体积小、重量轻，内嵌可调高压驱动电路，采用多种专业技术，已在诸多领域中得到广泛应用并进行长时间测试，且该探测器具有低成本特性，望广大用户前来选购。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 新闻卡片 2 -->
+      <div class="news-card">
+        <div class="card-header">
+          <a data-toggle="collapse" data-parent="#accordion" href="#news7">
+            <span>2018.03.12</span> 北京和力达科技推出高灵敏度荧光寿命分析系统，助力国内光电检测技术快速发展
+          </a>
+        </div>
+        <div id="news7" class="collapse">
+          <div class="card-body">
+            <div class="row">
+              <div class="news-img-col">
+                <a href="#">
+                  <img class="news-img img-responsive" src="../img/product/SPCS_T04_System.jpg" alt="HOLITA-FLA">
+                </a>
+              </div>
+              <div class="news-text-col">
+                <p class="news-time">2018年3月12日</p>
+                <p>北京和力达科技推出HOLITA-FLA高灵敏度荧光寿命分析系统，是专为高校及科研院所开发的科学分析仪器。</p>
+                <p>该系统采用多功能样品室、光栅单色仪及高灵敏单光子探测器，结合TCSPC多通道单光子计数系统，为电致发光、光致发光等应用提供全面支持。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 新闻卡片 3 -->
+      <div class="news-card">
+        <div class="card-header">
+          <a data-toggle="collapse" data-parent="#accordion" href="#news6">
+            <span>2017.05.17</span> 北京和力达科技推出SPCM-APD单光子模块，助力国内光电检测技术发展
+          </a>
+        </div>
+        <div id="news6" class="collapse">
+          <div class="card-body">
+            <div class="row">
+              <div class="news-img-col">
+                <img class="news-img img-responsive" src="../img/news/spcm-apd.png" alt="SPCM-APD">
+              </div>
+              <div class="news-text-col">
+                <p class="news-time">2017年5月</p>
+                <p>北京和力达科技隆重推出SPCM-APD单光子计数模块，采用主动淬灭电路的单光子探测器，拥有极高光灵敏度和量子效率，广泛应用于量子通讯、激光雷达等领域。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 更多新闻卡片可按此格式添加 -->
+    </div>
+  </main>
+
+  <!-- 页脚：使用 cpdz.html 的页脚结构 -->
+  <footer role="contentinfo" class="footer_bac">
+    <div class="footer_second">
+      <div class="container" style="max-width: 990px;">
+        <div class="row">
+          <section role="search" class="col-md-12 col-sm-12 col-xs-12">
+            <div class="pull-left copyright">
+              ©&nbsp;2012-2021&nbsp;北京和力达科技&nbsp; | &nbsp;
+              <span>
+                <a href="javascript:void(0);" style="text-decoration:none;">
+                  <img id="weixin_icon_footer" style="height:19px;" src="../img/wxicon.png"
+                    onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_footer').className='weixin_in_footer';"
+                    onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_footer').className='weixin_footer';" />
+                </a>
+                <div id="weixin_footer" class="weixin_footer">
+                  <img src="../img/HOLITA_weixin.jpg" width="100" height="100" alt="北京和力达官方微信二维码" title="北京和力达官方微信二维码">
+                  <div class="weixin_arrow_footer"></div>
+                </div>
+                &nbsp;|&nbsp;
+                <a href="http://beian.miit.gov.cn">京ICP备17029478号-1</a>
+              </span>
+            </div>
+            <div class="pull-right search">
+              <input type="search" placeholder="Search Here ..." />
+              <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- 返回主页按钮（右下角固定） -->
+  <style>
+    #back-to-home {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 14px;
+      z-index: 9999;
+    }
+    #back-to-home:hover {
+      background-color: #0056b3;
+    }
+  </style>
+  <a id="back-to-home" href="../index.html">返回主页</a>
+</body>
+</html>
