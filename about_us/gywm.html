@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="北京和力达科技有限公司，和力达科技，关于我们，高新技术企业，技术服务，APD传感器，单光子探测器， 单光子检测器， SPCM-APD" />
+    <meta name="description" content="北京和力达科技有限公司注册成立于北京市中关村高新技术园区，是提供技高科技技术服务的科技服务型技术企业，本公司主要提供针对极微弱光信号检测传感器模块及相关的技术解决方案。" />
+    <title>关于我们 - 北京和力达科技有限公司</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/bootstrap.jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- replace the null img by data-src="holder.js/numberxnumber"-->
+    <script src="../js/holder.js"></script>
+    <script src="../js/index.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv/3.7.2/html5shiv.3.7.2.min.js"></script>
+      <script src="../js/respond.js/1.4.2/respond.1.4.2.min.js"></script>
+    <![endif]-->
+    <style>
+        /* 以下新增 Flex 布局样式，确保页面充满屏幕 */
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /* 使用 Flex 布局，让最外层容器充满视口 */
+        .container-fluid > .row {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* 让 footer 始终在最下边 */
+        footer.footer_bac {
+            margin-top: auto;
+        }
+        /* 保留原有背景效果 */
+        .gywm_bac {
+            background-image: url(../img/gywm_body_bac.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            background-color: #FFFFFF;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="gywm_bac"></div>
+
+            <!-- the header begin -->
+            <header role="banner">
+                <!-- the nav begin -->
+                <div class="nav_first_1"></div>
+                <nav class="navbar-inverse nav_first" role="navigation">
+                    <div class="container" style="max-width: 1065px;">
+                        <div class="row">
+                            <div class="navbar-collapse">
+                                <ul class="nav navbar-nav center-block col-md-12 col-sm-12 col-xs-12">
+                                    <li class="dropdown a_index"><a href="../index.html">首 页</a></li>
+                                    <li class="dropdown navbar-drowdown-width selected"><a href="gywm.html">关于我们</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../news/xwzx.html">新闻中心</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../products/product.html">产品中心</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../custom_design/cpdz.html">产品定制</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../service_and_support/fwyzc.html">服务与支持</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../contact_us/lxwm.html">联系我们</a></li>
+                                    <li class="dropdown a_weixin">
+                                        <a href="javascript:void(0);">
+                                            <img id="weixin_icon_nav" src="../img/wxicon.png" onclick="weixin_icon_nav_click();"
+                                                onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_nav').className='weixin_in_nav';"
+                                                onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_nav').className='weixin_nav';" />
+                                        </a>
+                                        <div id="weixin_nav" class="weixin_nav">
+                                            <div class="weixin_arrow_nav"></div>
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100">
+                                        </div>
+                                    </li>
+                                    <script>
+                                        var i = 1;
+                                        function weixin_icon_nav_click() {
+                                            if (i % 2 != 0) {
+                                                document.getElementById('weixin_nav').style.display = 'inherit';
+                                            } else {
+                                                document.getElementById('weixin_nav').style.display = '';
+                                            }
+                                            i++;
+                                        }
+                                    </script>
+                                    <li class="dropdown a_cn_en"><a href="#">
+                                            <img src="../img/cn.png" title="中文" alt="中文" /></a></li>
+                                    <li class="dropdown a_cn_en"><a href="../en/index.html">
+                                            <img src="../img/en.png" title="English" alt="English" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- the nav end -->
+
+                <!-- the logo begin -->
+                <div id="logo" class="logo2">
+                    <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <a href="../index.html">
+                                    <img alt="logo" src="../img/product/网站用图/和力达LOGO.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the logo end -->
+
+                <!-- the banner background begin -->
+                <style>
+                    .main_banner {
+                        width: 100%;
+                        height: 340px;
+                        margin-top: -45px;
+                    }
+                    .main {
+                        margin-top: -340px;
+                    }
+                    .banner {
+                        float: none;
+                        width: 960px;
+                        margin: 0 auto;
+                        height: 290px;
+                        position: relative;
+                        padding-top: 142px;
+                        padding-right: 60px;
+                        text-align: right;
+                    }
+                </style>
+                <div class="container-fluid">
+                    <div class="row">
+                        <figure class="main_banner"></figure>
+                        <div class="main">
+                            <div class="banner"> </div>
+                        </div>
+                        <div style="max-width: 1862px; background-color: #ffffff; opacity: 0.86; margin: 0 auto; text-align: center; padding: 50px 0;">
+                            <!-- 将图片放大：设为85% 的宽度 -->
+                            <img src="../img/gywm_content - 副本.png" style="width:95%; max-width:100%;" />
+                        </div>
+                    </div>
+                </div>
+                <!-- the banner background end -->
+
+            </header>
+            <!-- the header end -->
+
+            <!-- the article begin -->
+            <article role="main">
+                <style>
+                    .main_content {
+                        margin-top: 0px;
+                    }
+                    .box {
+                        margin-bottom: -1px;
+                    }
+                </style>
+                <section>
+                    <div class="main_content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div>
+                                    <div class="article box">
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- the article end -->
+
+            <!-- the footer begin -->
+            <footer role="contentinfo" class="footer_bac">
+                <div class="footer_second">
+                    <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <section role="search" class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="pull-left copyright">
+                                    ©&nbsp;2012-2017&nbsp;北京和力达科技&nbsp; | &nbsp;
+                                    <span>
+                                        <a href="javascript:void(0);" style="text-decoration:none;">
+                                            <img id="weixin_icon_footer" style="height:19px;" src="../img/wxicon.png"
+                                                onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_footer').className='weixin_in_footer';"
+                                                onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_footer').className='weixin_footer';" />
+                                        </a>
+                                        <div id="weixin_footer" class="weixin_footer">
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100" alt="北京和力达官方微信二维码" title="北京和力达官方微信二维码">
+                                            <div class="weixin_arrow_footer"></div>
+                                        </div>
+                                        &nbsp;|&nbsp;
+                                        <a href="http://beian.miit.gov.cn">京ICP备17029478号-1</a>
+                                    </span>
+                                </div>
+                                <div class="pull-right search">
+                                    <input type="search" placeholder="Search Here ..." />
+                                    <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- the footer end -->
+        </div>
+    </div>
+    <!-- 返回主页按钮 -->
+    <a id="back-to-home" href="../index.html">返回主页</a>
+</body>
+</html>

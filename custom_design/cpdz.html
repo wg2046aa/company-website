@@ -1,0 +1,314 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="北京和力达科技有限公司，产品定制，APD检测器，单光子探测器  单光子检测器" />
+    <meta name="description" content="北京和力达科技有限公司，专业的开发团队，确保您的需求得以快速、准确的实现；专业的项目管理人员与您沟通，尽我们最大的努力满足您的各种需求，提供专业的技术服务。" />
+    <title>产品定制 - 北京和力达科技有限公司</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/bootstrap.jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- replace the null img by data-src="holder.js/numberxnumber"-->
+    <script src="../js/holder.js"></script>
+    <script src="../js/index.js"></script>
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv/3.7.2/html5shiv.3.7.2.min.js"></script>
+      <script src="../js/respond.js/1.4.2/respond.1.4.2.min.js"></script>
+    <![endif]-->
+    <style>
+        /* 页面公共样式 */
+        body, button, a {
+            font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+        header, footer {
+            background: #fff;
+        }
+        .navbar-inverse {
+            background-color: #222;
+            border-color: #080808;
+        }
+        .navbar-inverse .navbar-nav > li > a {
+            color: #fff;
+        }
+        .navbar-inverse .navbar-nav > li.selected > a {
+            color: #ff0;
+        }
+        /* Banner样式 */
+        .main_banner {
+            background: url(../img/cpdz_body_bac.jpg) top center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 840px;
+            margin-top: -45px;
+        }
+        /* 主要内容样式 */
+        .main_content {
+            margin-top: -740px;
+        }
+        .box {
+            margin-bottom: -1px;
+            display: block;
+            width: 100%;
+            opacity: 1;
+        }
+        .om {
+            text-align: center;
+        }
+        .om .om_div {
+            margin: 0 auto;
+            width: 195px;
+            height: 268px;
+            overflow: hidden;
+        }
+        /* 调整“om”区域使图片和下方文字紧凑 */
+        .om p {
+            padding-top: 10px;
+            text-align: center;
+            font-size: 17px;
+            line-height: 30px;
+            margin: 0;
+        }
+        /* 联系我们区域（新增） */
+        .custom-info {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 990px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        .custom-info h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .custom-info p {
+            font-size: 16px;
+            color: #007BFF;
+            margin: 10px 0;
+        }
+        /* 返回主页按钮（固定右下角） */
+        #back-to-home {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            z-index: 9999;
+        }
+        #back-to-home:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- the header begin -->
+            <header role="banner">
+
+                <!-- the nav begin -->
+                <div class="nav_first_1"></div>
+                <nav class="navbar-inverse nav_first" role="navigation">
+                    <div class="container" style="max-width: 1065px;">
+                        <div class="row">
+                            <div class="navbar-collapse ">
+                                <ul class="nav navbar-nav center-block col-md-12 col-sm-12 col-xs-12">
+                                    <li class="dropdown a_index"><a href="../index.html">首 页</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../about_us/gywm.html">关于我们</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../news/xwzx.html">新闻中心</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../products/product.html">产品中心</a></li>
+                                    <li class="dropdown navbar-drowdown-width selected"><a href="cpdz.html">产品定制</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../service_and_support/fwyzc.html">服务与支持</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="../contact_us/lxwm.html">联系我们</a></li>
+                                    <li class="dropdown a_weixin">
+                                        <a href="javascript:void(0);">
+                                            <img id="weixin_icon_nav" src="../img/wxicon.png" onclick="weixin_icon_nav_click();"
+                                                onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_nav').className = 'weixin_in_nav';"
+                                                onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_nav').className = 'weixin_nav';" />
+                                        </a>
+                                        <div id="weixin_nav" class="weixin_nav">
+                                            <div class="weixin_arrow_nav"></div>
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100">
+                                        </div>
+                                    </li>
+                                    <script>
+                                        var i = 1;
+                                        function weixin_icon_nav_click() {
+                                            if (i % 2 != 0) {
+                                                document.getElementById('weixin_nav').style.display = 'inherit';
+                                            }
+                                            else {
+                                                document.getElementById('weixin_nav').style.display = '';
+                                            }
+                                            i++;
+                                        }
+                                    </script>
+                                    <li class="dropdown a_cn_en"><a href="#">
+                                            <img src="../img/cn.png" title="中文" alt="中文" /></a></li>
+                                    <li class="dropdown a_cn_en"><a href="../en/index.html">
+                                            <img src="../img/en.png" title="English" alt="English" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- the nav end -->
+
+                <!-- the logo begin -->
+                <div id="logo" class="logo2">
+                    <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12">
+                                <a href="../index.html">
+                                    <img alt="logo" src="../img/product/网站用图/和力达LOGO.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the logo end -->
+
+                <!-- the banner background begin -->
+                <style>
+                    .main_banner {
+                        background: #fff url(../img/cpdz_body_bac.jpg) top center no-repeat;
+                        width: 100%;
+                        height: 840px;
+                        margin-top: -45px;
+                    }
+                    .main {
+                        margin-top: -840px;
+                    }
+                    .banner {
+                        float: none;
+                        width: 960px;
+                        margin: 0 auto;
+                        height: 840px;
+                        position: relative;
+                    }
+                </style>
+                <div class="container-fluid">
+                    <div class="row">
+                        <figure class="main_banner"></figure>
+                        <div class="main">
+                            <div class="banner"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the banner background end -->
+
+            </header>
+            <!-- the header end -->
+
+            <!-- the article begin -->
+            <article role="main">
+                <section>
+                    <div class="main_content">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div style="width: 100%;">
+                                    <div class="box article">
+                                        <div class="container" style="max-width: 990px;">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12 col-xs-12">
+                                                    <div style="height: 190px; padding-right: 50px; width: 100%; text-align: right;"> </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div style="max-width: 1862px; margin: 0 auto; background-color: #ffffff; opacity: 0.90;">
+                                            <div style="max-width: 990px; margin: 0 auto; padding: 50px 0; background: url(../img/om_bac.png) top center no-repeat; background-position-y: 72px;">
+                                                <!-- 此处原来显示的是三组详细描述，现改为只显示一组图片和对应下方文字 -->
+                                                <div class="om col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="om_div">
+                                                        <img src="../img/om_renyuan.png" alt="人员图" style="width:100%;" />
+                                                    </div>
+                                                    <p class="text-center">专业的开发团队， 确保您的需求得以快速、准确的实现</p>
+                                                </div>
+                                                <div class="om col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="om_div">
+                                                        <img src="../img/om_guanli.png" alt="管理图" style="width:100%;" />
+                                                    </div>
+                                                    <p class="text-center">专业的项目管理人员与您沟通， 尽我们最大的努力满足您的需求</p>
+                                                </div>
+                                                <div class="om col-md-4 col-sm-4 col-xs-4">
+                                                    <div class="om_div">
+                                                        <img src="../img/om_fuwu.png" alt="服务图" style="width:100%;" />
+                                                    </div>
+                                                    <p class="text-center">提供专业的技术咨询服务， 确保您的开发能够快速推进</p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </section>
+            </article>
+            <!-- the article end -->
+
+            <!-- 新增：联系我们区域 begin -->
+            <section class="custom-info">
+                <h2>联系我们</h2>
+                <p><span>联系电话：【18612331536】&nbsp;</span></p>
+                <p>或发送邮件至：market@helida-tech.com<br>
+                </p>
+                <p><a href="mailto:custom@holita.com（cn）">&nbsp;</a></p>
+            </section>
+            <!-- 新增：联系我们区域 end -->
+
+            <!-- the footer begin -->
+            <footer role="contentinfo" class="footer_bac">
+                <div class="footer_second">
+                    <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <section role="search" class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="pull-left copyright">
+                                    ©&nbsp;2012-2021&nbsp;北京和力达科技&nbsp; | &nbsp;
+                                    <span>
+                                        <a href="javascript:void(0);" style="text-decoration:none;">
+                                            <img id="weixin_icon_footer" style="height:19px;" src="../img/wxicon.png"
+                                                onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_footer').className = 'weixin_in_footer';"
+                                                onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_footer').className = 'weixin_footer';" />
+                                        </a>
+                                        <div id="weixin_footer" class="weixin_footer">
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100" alt="北京和力达官方微信二维码" title="北京和力达官方微信二维码">
+                                            <div class="weixin_arrow_footer"></div>
+                                        </div>
+                                        &nbsp;|&nbsp;
+                                        <a href="http://beian.miit.gov.cn">京ICP备17029478号-1</a>
+                                    </span>
+                                </div>
+                                <div class="pull-right search">
+                                    <input type="search" placeholder="Search Here ..." />
+                                    <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- the footer end -->
+        </div>
+    </div>
+    <!-- 返回主页按钮 begin -->
+    <a id="back-to-home" href="../index.html">返回主页</a>
+    <!-- 返回主页按钮 end -->
+</body>
+
+</html>

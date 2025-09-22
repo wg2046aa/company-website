@@ -1,0 +1,309 @@
+﻿.header {
+    z-index:20;
+    position:relative;
+}
+.main_banner {
+/*    background: #fff url(../img/products_main_banner.jpg) top center no-repeat;*/
+	 background: #fff url(../img/product_main_banner.jpg) top center no-repeat;
+    width: 100%;
+    height: 290px;
+    margin-top:-45px;
+}
+
+.cpzx_tap {
+    margin-top: -110px;
+}
+
+.main_banner_tap {
+    display: block;
+    width: 100%;
+}
+
+    .main_banner_tap ul {
+        width: 100%;
+        display: block;
+        padding: 0px;
+        width: 960px; 
+        height: 110px; 
+        overflow: hidden; 
+        margin: 0 auto;
+    }
+
+    .main_banner_tap li {
+        /*width: 8.333333333333333%;*/
+        width: 120px;
+        float: left;
+        padding: 0px;
+        list-style-type: none;
+        margin: 0px;
+    }
+
+        .main_banner_tap li:hover {
+            /*background-image: url(../img/p_selected.png);*/
+        }
+
+.current_li {
+    /*background-image: url(../img/p_selected.png);*/
+}
+
+.main_content {
+    margin-top: -1px;
+}
+
+.box {
+    border: 1px solid #d2d2d2;
+    /*border-radius: 5px;*/
+    background-color: #fff;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+.main_content_left {
+    width: 236px;
+    border-right: 1px solid #d2d2d2;
+    height: 100%;
+    float: left;
+}
+
+.main_content_right {
+    width: 723px;
+    border-left: 1px solid #d2d2d2;
+    height: 100%;
+    float: right;
+    padding-bottom: 15px;
+    margin-left: -1px;
+}
+
+.menu_list {
+    width: 235px;
+    margin: 1px 0px 8px 0px;
+    display: block;
+    height: auto;
+    background-color: #fff;
+}
+
+    .menu_list a:hover {
+        /**/color: #f3e5a2;
+        /*background-color: #558BCD;*/
+    }
+
+    .menu_list hr {
+        height: 1px;
+        margin: 0 auto;
+        width:220px;
+        border-top: 1px solid #cecece;
+    }
+
+.menu_body a:hover {
+    /**/color: #f3e5a2;
+    /*background-color: #558BCD;*/
+    background-image:url(../img/products_menu_bac.png);
+    background-size: 234px 33px;
+}
+
+.menu_head {
+    width: 200px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    text-align: left;
+    padding: 0 11px;
+}
+
+    .menu_head a {
+        color: #4D4D4D !important;
+        text-decoration:none;
+    }
+
+        .menu_head a:hover {
+            color: #558BCD !important;
+            text-decoration: none;
+            background-color: #FFF;
+        }
+
+.menu_list .current a {
+    color: #558BCD !important;
+    /*background-color:#558BCD;*/
+}
+
+.menu_list .current_second a {
+    color: #558BCD !important;
+    background-color: #fff !important;
+    background-image:none !important;
+}
+
+.current_a {
+    /**/color: #f3e5a2 !important;
+    /*background-color: #558BCD !important;*/
+        background-image:url(../img/products_menu_bac.png) !important;
+    background-size: 234px 33px !important;
+}
+
+.menu_body {
+    width: 235px;
+    height: auto;
+    background: #fff;
+}
+
+    .menu_body a {
+        display: block;
+        width: 234px;
+        height: auto;
+        line-height: 33px;
+        font-size: 13px;
+        /*font-size: 12px;*/
+        /*padding: 0 0 0 26px;*/
+        padding: 0 0 0 22px;
+        color: #4D4D4D;
+        background: #fff;
+        text-decoration: none;
+    }
+
+        .menu_body a:hover {
+            text-decoration: none;
+        }
+/*second*/
+.menu_head_second {
+    width: 235px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    text-align: left;
+    /*padding: 0 11px;*/
+}
+
+    .menu_head_second a {
+        padding:0 22px;
+        color: #4D4D4D !important;
+        background-color: #fff !important;
+        background-image:none !important;
+    }
+
+        .menu_head_second a:hover {
+            color: #558BCD !important;
+            text-decoration: none;
+            background-color: #FFF;
+            background-image:none;
+        }
+
+.menu_body_second {
+    width: 235px;
+    height: auto;
+    background: #fff;
+}
+
+    .menu_body_second a {
+        display: block;
+        width: 235px;
+        height: auto;
+        line-height: 33px;
+        /*font-size: 13px;*/
+        font-size: 12px;
+        /*padding: 0 0 0 33px;*/
+        padding: 0 0 0 22px;
+        color: #4D4D4D;
+        background: #fff;
+        text-decoration: none;
+    }
+
+        .menu_body_second a:hover {
+            text-decoration: none;
+        }
+
+.products {
+    width: 220px;
+    margin: 0 8px 0 8px;
+    padding: 0 11px;
+    line-height: 50px;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: left;
+    font-size: 19px;
+    color: #0F60B1;
+}
+
+.products_title {
+    width: 702px;
+    display: block;
+    margin: 0 20px 0 0px;
+    height: 50px;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: center;
+    font-size: 19px;
+    color: #0F60B1;
+}
+
+.products_title_left {
+    float: left;
+    text-align: left;
+    line-height: 50px;
+    width: 527px;
+    padding-left: 15px;
+}
+
+.products_title_right {
+    float: right;
+    text-align: right;
+    margin: 0px 0;
+    padding-bottom: 5px;
+    line-height: 45px;
+    width: 173px;
+}
+
+.products_detail {
+    width: 684px;
+    margin: 20px 21px 10px 21px;
+    height: auto;
+    /*border-bottom: 1px solid #cecece; */
+    display: block;
+}
+
+.products_detail_left {
+    float: left;
+    width: 180px;
+    padding-bottom: 14px;
+    padding-top: 20px;
+    text-align:center;
+}
+
+    .products_detail_left img {
+        /*border: 1px solid #ddd;*/
+        width: 178px;
+    }
+
+.products_detail_right {
+    float: left;
+    width: 504px;
+    text-align: left;
+    line-height: 21px;
+    color: #000;
+    padding-left: 15px;
+}
+.friend_links_title {
+    width: 220px;
+    margin: 0 8px 0 8px;
+    padding: 0 11px;
+    line-height: 73px;
+    border-bottom: 1px solid #cecece;
+    text-align: left;
+    font-size: 19px;
+    color: #0F60B1;
+}
+
+.affix {
+    top: 0;
+}
+
+.affix-bottom {
+    position: relative;
+    bottom: 0;
+}

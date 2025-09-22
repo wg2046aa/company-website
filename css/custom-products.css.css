@@ -1,0 +1,199 @@
+﻿/* 通用字体、链接样式 */
+body {
+  font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #007bff;
+}
+
+/* 页眉、页脚背景 */
+header, footer {
+  background: #fff;
+}
+
+/* 导航栏样式 */
+.navbar-inverse {
+  background-color: #222;
+  border-color: #080808;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li.selected > a {
+  color: #ff0;
+}
+
+/* 主banner */
+.main_banner {
+  background: url(../img/product_main_banner.jpg) top center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 290px;
+  margin-top: -45px;
+}
+
+/* 主体内容间距 */
+.main_content {
+  margin-top: 20px;
+}
+
+/* 左侧菜单 */
+aside .products a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.menu_header, .sub_menu_header {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  text-align: left;
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 16px;
+  outline: none;
+  transition: background 0.2s;
+}
+.menu_header:hover, .sub_menu_header:hover {
+  background-color: #eaeaea;
+}
+.menu_header.arrow::before, .sub_menu_header.arrow::before {
+  content: "▶";
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.3s;
+  color: #333;
+}
+.menu_header.expanded::before, .sub_menu_header.expanded::before {
+  transform: rotate(90deg);
+}
+.menu_body, .sub_menu_body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  padding-left: 10px;
+}
+aside .menu_body.show, aside .sub_menu_body.show {
+  max-height: 999px;
+  overflow: visible;
+}
+.menu_body a, .sub_menu_body a {
+  display: block;
+  padding: 5px 0;
+  color: #333;
+  font-size: 14px;
+}
+.menu_body a:hover, .sub_menu_body a:hover {
+  text-decoration: underline;
+}
+.sub_menu {
+  margin-left: 15px;
+}
+
+/* 右侧产品展示区 */
+.content_right {
+  color: #555;
+}
+.content_right h2 {
+  margin-top: 0;
+  font-size: 16px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  color: #2c3e50;
+}
+.section-heading {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+/* 产品卡片优化 */
+.product-item {
+  margin: 29px 0 29px 29px;
+  width: 218px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.product-item:hover {
+  box-shadow: 0 4px 12px rgba(0,123,255,0.1);
+}
+.product-item img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+.bac {
+  width: 100%;
+  height: 38px;
+  background-color: #cccccc;
+  opacity: 0.37;
+}
+.detail {
+  width: 100%;
+  height: 38px;
+  line-height: 38px;
+  margin-top: -38px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+}
+hr {
+  border-top: 1px solid #ddd;
+  margin: 20px 0;
+  clear: both;
+}
+
+/* 响应式产品卡片布局 */
+@media (max-width: 991px) {
+  .product-item {
+    width: 47%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767px) {
+  .product-item {
+    width: 98%;
+    margin: 1% auto 24px auto;
+  }
+  aside, .main_content, .content_right {
+    padding: 0 8px;
+  }
+}
+
+/* 返回顶部按钮 */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007BFF;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  font-size: 15px;
+}
+
+/* 使用Bootstrap自带的clearfix替代自定义clear-left */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}

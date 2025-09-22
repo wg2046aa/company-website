@@ -1,0 +1,725 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="产品中心, 和力达科技, SPCM-APD, 单光子探测器, 数据采集系统, ADC采集卡, TCSPC采集卡" name="keywords"/>
+  <meta content="北京和力达科技有限公司主要提供极微弱光信号检测传感器模块及相关技术解决方案。" name="description"/>
+  <title>产品中心 - 北京和力达科技有限公司</title>
+  <link href="../css/bootstrap.css" rel="stylesheet"/>
+  <link href="../css/products.css" rel="stylesheet"/>
+  <style>
+    /* 通用字体 */
+    body, button, a {
+      font-family: "微软雅黑", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    /* 页眉、页脚背景 */
+    header, footer {
+      background: #fff;
+    }
+    /* 页眉 - 导航样式 */
+    .navbar-inverse {
+      background-color: #222;
+      border-color: #080808;
+    }
+    .navbar-inverse .navbar-nav > li > a {
+      color: #fff;
+    }
+    .navbar-inverse .navbar-nav > li.selected > a {
+      color: #ff0;
+    }
+    /* 主banner */
+    .main_banner {
+      background: url(../img/product_main_banner.jpg) top center no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 290px;
+      margin-top: -45px;
+    }
+    /* 页面主体 */
+    .main_content {
+      margin-top: 20px;
+    }
+    /* 左侧菜单 */
+    aside .products a {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+    }
+    .menu_header, .sub_menu_header {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      color: #333;
+      text-align: left;
+      width: 100%;
+      padding: 8px 10px;
+      font-size: 16px;
+    }
+    .menu_header:hover, .sub_menu_header:hover {
+      background-color: #eaeaea;
+    }
+    .menu_header.arrow::before, .sub_menu_header.arrow::before {
+      content: "▶";
+      display: inline-block;
+      margin-right: 8px;
+      transition: transform 0.3s ease;
+      color: #333;
+    }
+    .menu_header.expanded::before, .sub_menu_header.expanded::before {
+      transform: rotate(90deg);
+    }
+    .menu_body, .sub_menu_body {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease-out;
+      padding-left: 10px;
+    }
+    /* 左侧菜单默认展开时不使用滚动条 */
+    aside .menu_body.show, aside .sub_menu_body.show {
+      max-height: none;
+      overflow: visible;
+    }
+    .menu_body a, .sub_menu_body a {
+      display: block;
+      padding: 5px 0;
+      color: #333;
+      font-size: 14px;
+    }
+    .menu_body a:hover, .sub_menu_body a:hover {
+      text-decoration: underline;
+    }
+    .sub_menu {
+      margin-left: 15px;
+    }
+    /* 右侧产品展示 */
+    .content_right {
+      color: #555;
+    }
+    .content_right h2 {
+      margin-top: 0;
+      font-size: 16px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+      color: #2c3e50;
+    }
+    .section-heading {
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+    .product-item {
+      margin: 29px 0 29px 29px;
+      width: 218px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .product-item img {
+      max-width: 216px;
+      max-height: 268px;
+      display: block;
+      margin: 0 auto;
+    }
+    .bac {
+      width: 216px;
+      height: 38px;
+      background-color: #cccccc;
+      opacity: 0.37;
+    }
+    .detail {
+      width: 216px;
+      height: 38px;
+      line-height: 38px;
+      margin-top: -38px;
+      text-align: center;
+      color: #000;
+      font-size: 14px;
+    }
+    hr {
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+      clear: both;
+    }
+    /* 返回顶部按钮 */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007BFF;
+      color: #fff;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none;
+      z-index: 1000;
+    }
+    /* 针对高速数据采集卡区域 */
+    #high-speed-daq .row > .col-md-4:nth-of-type(3n+1) .product-item {
+      margin-left: 0;
+    }
+    /* 统一定义清除浮动 */
+    .clear-left {
+      clear: left;
+    }
+  </style>
+</head>
+<body>
+<header>
+<div class="container-fluid">
+<div class="row">
+<nav class="navbar navbar-inverse" role="navigation">
+<div class="container" style="max-width: 1080px;">
+<div class="navbar-collapse">
+<ul class="nav navbar-nav center-block col-md-12 col-sm-12 col-xs-12">
+<li class="dropdown a_index"><a href="../index.html">首 页</a></li>
+<li class="dropdown navbar-drowdown-width"><a href="../about_us/gywm.html">关于我们</a></li>
+<li class="dropdown navbar-drowdown-width"><a href="../news/xwzx.html">新闻中心</a></li>
+<li class="dropdown navbar-drowdown-width selected"><a href="product.html">产品中心</a></li>
+<li class="dropdown navbar-drowdown-width"><a href="../custom_design/cpdz.html">产品定制</a></li>
+<li class="dropdown navbar-drowdown-width"><a href="../service_and_support/fwyzc.html">服务与支持</a></li>
+<li class="dropdown navbar-drowdown-width"><a href="../contact_us/lxwm.html">联系我们</a></li>
+<li class="dropdown a_weixin">
+<a href="javascript:void(0);">
+<img alt="微信" id="weixin_icon_nav" onclick="weixin_icon_nav_click();" onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_nav').className = 'weixin_in_nav';" onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_nav').className = 'weixin_nav';" src="../img/wxicon.png"/>
+</a>
+<div class="weixin_nav" id="weixin_nav">
+<div class="weixin_arrow_nav"></div>
+<img alt="官方微信" height="100" src="../img/HOLITA_weixin.jpg" width="100"/>
+</div>
+</li>
+<li class="dropdown a_cn_en"><a href="#"><img alt="中文" src="../img/cn.png" title="中文"/></a></li>
+<li class="dropdown a_cn_en"><a href="../en/index.html"><img alt="English" src="../img/en.png" title="English"/></a></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="logo2" id="logo">
+<div class="container" style="max-width: 990px;">
+<div class="row">
+<div class="col-xs-12 col-sm-12 col-lg-3 col-md-6 col-md-offset-4">
+<a href="../index.html">
+<img alt="logo" src="../img/product/网站用图/和力达LOGO.png"/>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+<figure class="main_banner"></figure>
+</div>
+</div>
+</div>
+</div>
+</header>
+<main>
+<div class="main_content">
+<div class="container" style="max-width: 1080px;">
+<div class="row">
+<aside class="col-md-3 col-sm-12 col-xs-12">
+<div class="products">
+<a href="product.html">产品中心</a>
+</div>
+<div id="firstpane">
+<button class="menu_header arrow">单光子探测器</button>
+<div class="menu_body">
+<a href="#spcm">SPCM-APD</a>
+<a href="#spcm">SPCM-L-APD</a>
+<a href="#spcm">SPCM-12混合型</a>
+<a href="#spcm">SPCM-01频率型</a>
+<a href="#spcm">SPCM-02电压型</a>
+<a href="#spcm">SPCM-03门控型</a>
+<a href="#spcm">SPCM-04电流型</a>
+</div>
+<button class="menu_header arrow">数据采集系统</button>
+<div class="menu_body">
+<div class="sub_menu">
+<button class="sub_menu_header arrow">激光雷达数据采集卡</button>
+<div class="sub_menu_body">
+<a href="#lidar">SPCB-NET-A2</a>
+<a href="#lidar">SPCB-NET-A4</a>
+<a href="#lidar">SPCB-NET-B2-6</a>
+<a href="#lidar">SPCB-NET-B6-2</a>
+<a href="#lidar">HLD-CDL-NET-A2</a>
+<a href="#lidar">HLD-CDL-PCIe-A2</a>
+<a href="#lidar">SPCB-NET-B8-4</a>
+<a href="#lidar">SPCB-PCIe-B16</a>
+</div>
+</div>
+<div class="sub_menu">
+<button class="sub_menu_header arrow">TCSPC 与 TDC 采集卡</button>
+<div class="sub_menu_body">
+<a href="#tcspc-tdc">SPCB-PCIe-TCSPC-DDG(A2-D4)</a>
+<a href="#tcspc-tdc">HLD-TCSPC-32</a>
+<a href="#tcspc-tdc">HLD-TDC-64</a>
+</div>
+</div>
+<div class="sub_menu">
+<button class="sub_menu_header arrow">高速数据采集卡（通用）</button>
+<div class="sub_menu_body">
+<a href="#high-speed-daq">HLD-SFP-A16T500M</a>
+<a href="#high-speed-daq">HLD-PCIe-A8 T4000M</a>
+<a href="#high-speed-daq">HLD-PCIe-A2T2500M</a>
+<a href="#high-speed-daq">HLD-PCIe-A1 T2500M T5000M</a>
+<a href="#high-speed-daq">HLD-NET-A2T500M</a>
+<a href="#high-speed-daq">HLD-PXIe-A2T250M</a>
+<a href="#high-speed-daq">HLD-NET-A2T250M</a>
+</div>
+</div>
+<div class="sub_menu">
+<button class="sub_menu_header arrow">ADC 采集卡（定制专用卡）</button>
+<div class="sub_menu_body">
+<a href="#adc-daq">HLD-XCK7325T-HMC1520-V101</a>
+<a href="#adc-daq">HLD-XCK7325T-ADC78D1520</a>
+<a href="#adc-daq">HLD-XCKU060-ADC12DJ3200-V101</a>
+<a href="#adc-daq">HLD-7K325T-GMS002-V101</a>
+<a href="#adc-daq">HLD-XCK7325T-AD9250-V101</a>
+</div>
+</div>
+</div>
+<button class="menu_header arrow">大数据处理平台</button>
+<div class="menu_body">
+<a href="#hld-dpu">HLD-DPU-01</a>
+<a href="#hld-dpu">HLD-DPU-02</a>
+</div>
+<button class="menu_header arrow">分析仪器与设备</button>
+<div class="menu_body">
+<a href="#fla">瞬态光谱分析仪 HELID FLA</a>
+</div>
+</div>
+</aside>
+<article class="col-md-9 col-sm-12 col-xs-12 content_right">
+<section id="spcm">
+<h2>单光子探测器</h2>
+<div class="row">
+<div class="col-md-4" id="spcm-apd">
+<div class="product-item">
+<a href="SPCM/SPCM-APD.html" target="_blank">
+<img alt="SPCM-APD" loading="lazy" src="../img/product/spcm-apd.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-APD</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-l-apd">
+<div class="product-item">
+<a href="SPCM/SPCM-L-APD.html" target="_blank">
+<img alt="SPCM-L-APD" loading="lazy" src="../img/product/网站用图/单光子探测器/SPCM-L-APD.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-L-APD</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-12">
+<div class="product-item">
+<a href="SPCM/SPCM-12.html" target="_blank">
+<img alt="SPCM-12混合型" loading="lazy" src="../img/product/网站用图/单光子探测器/SPCM-12.PNG"/>
+<div class="bac"></div>
+<div class="detail">SPCM-12混合型</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-01">
+<div class="product-item">
+<a href="SPCM/SPCM-01-PMT.html" target="_blank">
+<img alt="SPCM-01频率型" loading="lazy" src="../img/product/网站用图/单光子探测器/SPCM-01.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-01频率型</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-02">
+<div class="product-item">
+<a href="SPCM/SPCM-02-PMT.html" target="_blank">
+<img alt="SPCM-02电压型" loading="lazy" src="../img/product/网站用图/单光子探测器/SPCM-02.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-02电压型</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-03">
+<div class="product-item">
+<a href="SPCM/SPCM-03-PMT.html" target="_blank">
+<img alt="SPCM-03门控型" loading="lazy" src="../img/product/SPCM-03.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-03门控型</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="spcm-04">
+<div class="product-item">
+<a href="SPCM/SPCM-04-PMT.html" target="_blank">
+<img alt="SPCM-04电流型" loading="lazy" src="../img/product/SPCM-04-M64.png"/>
+<div class="bac"></div>
+<div class="detail">SPCM-04电流型</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<hr/>
+<section id="daq">
+<h2>数据采集系统</h2>
+<section id="lidar">
+<h3 class="section-heading">激光雷达数据采集卡</h3>
+<div class="row">
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-NET-A2.html" target="_blank">
+<img alt="SPCB-NET-A2" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-NET-A2.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-NET-A2</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-NET-A4.html" target="_blank">
+<img alt="SPCB-NET-A4" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-NET-A4.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-NET-A4</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-NET-B2-6.html" target="_blank">
+<img alt="SPCB-NET-B2-6" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-NET-B2-6.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-NET-B2-6</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-NET-B6-2.html" target="_blank">
+<img alt="SPCB-NET-B6-2" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-NET-B6-2.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-NET-B6-2</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-CDL-NET-A2.html" target="_blank">
+<img alt="HLD-CDL-NET-A2" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/HLD-CDL-NET-A2.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-CDL-NET-A2</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-CDL-PCIE-A2.html" target="_blank">
+<img alt="HLD-CDL-PCIe-A2" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/HLD-CDL-PCIe-A2.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-CDL-PCIe-A2</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-NET-B8-4.html" target="_blank">
+<img alt="SPCB-NET-B8-4" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-NET-B8.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-NET-B8-4</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-PCIe-B16.html" target="_blank">
+<img alt="SPCB-PCIe-B16" loading="lazy" src="../img/product/网站用图/激光雷达数据采集卡/SPCB-PCIe-B16.png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-PCIe-B16</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<hr/>
+<section id="tcspc-tdc">
+<h3 class="section-heading">TCSPC 与 TDC 采集卡</h3>
+<div class="row">
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/SPCB-PCIe-TCSPC-DDG(A2-D4).html" target="_blank">
+<img alt="SPCB-PCIe-TCSPC-DDG(A2-D4)" loading="lazy" src="../img/product/网站用图/TCSPC与TDC采集卡/SPCB-PCIe-TCSPC-DDG(A2-D4).png"/>
+<div class="bac"></div>
+<div class="detail">SPCB-PCIe-TCSPC-DDG(A2-D4)</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-TCSPC-32.html" target="_blank">
+<img alt="HLD-TCSPC-32" loading="lazy" src="../img/product/网站用图/TCSPC与TDC采集卡/HLD-TCSPC-32.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-TCSPC-32</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-TDC-64.html" target="_blank">
+<img alt="HLD-TDC-64" loading="lazy" src="../img/product/网站用图/TCSPC与TDC采集卡/TDC64.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-TDC-64</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<hr/>
+<section id="high-speed-daq">
+<h3 class="section-heading">高速数据采集卡（通用）</h3>
+<div class="row">
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-SFP-A16T500M.html" target="_blank">
+<img alt="HLD-SFP-A16T500M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-PCIe-  A16T500M  HLD-SFP-  A16T500M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-SFP-A16T500M</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-PCIE-A8T4000M.html" target="_blank">
+<img alt="HLD-PCIe-A8 T4000M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-PCIe-A8 T4000M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-PCIe-A8T4000M</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-PCIe-A2T2500M.html" target="_blank">
+<img alt="HLD-PCIe-A2T2500M" loading="lazy" src="../img/product/网站用图/HLD-PCIe-A2T2500M/图片_compressed2.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-PCIe-A2T2500M</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-PCIE-A1T2500M-A1T5000M.html" target="_blank">
+<img alt="HLD-PCIe-A1 T2500M T5000M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-PCIe-A1   T2500M  T5000M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-PCIe-A1T2500M T5000M<br/></div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-NET-A2T500M.html" target="_blank">
+<img alt="HLD-NET-A2T500M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-NET-A2 T500M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-NET-A2T500M</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-PXIe-A2T250M.html" target="_blank">
+<img alt="HLD-PXIe-A2T250M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-PXIe-A2 T250M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-PXIe-A2T250M</div>
+</a>
+</div>
+</div>
+<div class="col-md-4 clear-left">
+<div class="product-item">
+<a href="CARD/HLD-NET-A2T250M.html" target="_blank">
+<img alt="HLD-NET-A2T250M" loading="lazy" src="../img/product/网站用图/通用数据采集卡/HLD-NET-A2 T250M.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-NET-A2T250M</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<hr/>
+<section id="adc-daq">
+<h3 class="section-heading">ADC 采集卡（定制专用卡）</h3>
+<div class="row">
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-XCK7325T-V101.html" target="_blank">
+<img alt="HLD-XCK7325T-HMC1520-V101" loading="lazy" src="../img/product/网站用图/ADC采集卡（定制专用卡)/HLD-XCK7325T-HMC1520-V101.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-XCK7325T-HMC1520-V101</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-XCK7325T-ADC78D1520.html" target="_blank">
+<img alt="HLD-XCK7325T-ADC78D1520" loading="lazy" src="../img/product/网站用图/ADC采集卡（定制专用卡)/HLD-XCK7325T-ADC78D1520.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-XCK7325T-ADC78D1520</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-XCKU060-ADC12DJ3200-V101.html" target="_blank">
+<img alt="HLD-XCKU060-ADC12DJ3200-V101" loading="lazy" src="../img/product/网站用图/ADC采集卡（定制专用卡)/HLD-XCKU060-ADC12DJ3200-V101.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-XCKU060-ADC12DJ3200-V101</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-7K325T-GMS002-V101.html" target="_blank">
+<img alt="HLD-7K325T-GMS002-V101" loading="lazy" src="../img/product/网站用图/ADC采集卡（定制专用卡)/HLD-7K325T-GMS002-V101.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-7K325T-GMS002-V101</div>
+</a>
+</div>
+</div>
+<div class="col-md-4">
+<div class="product-item">
+<a href="CARD/HLD-XCK7325T-AD9250-V101.html" target="_blank">
+<img alt="HLD-XCK7325T-AD9250-V101" loading="lazy" src="../img/product/网站用图/ADC采集卡（定制专用卡)/HLD-XCK7325T-AD9250-V101.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-XCK7325T-AD9250-V101</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+</section>
+<hr/>
+<section id="hld-dpu">
+<h2>大数据处理平台</h2>
+<div class="row">
+<div class="col-md-4" id="hld-dpu-01">
+<div class="product-item">
+<a href="Instrument/HLD-DPU-01.html" target="_blank">
+<img alt="HLD-DPU-01" loading="lazy" src="../img/product/网站用图/HLD-DPU.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-DPU-01 算法平台</div>
+</a>
+</div>
+</div>
+<div class="col-md-4" id="hld-dpu-02">
+<div class="product-item">
+<a href="Instrument/HLD-DPU-02.html" target="_blank">
+<img alt="HLD-DPU-02" loading="lazy" src="../img/product/网站用图/HLD-DPU-02.png"/>
+<div class="bac"></div>
+<div class="detail">HLD-DPU-02 计算加速卡</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<hr/>
+<section id="fla">
+<h2>分析仪器与设备</h2>
+<div class="row">
+<div class="col-md-4" id="fla-item">
+<div class="product-item">
+<a href="Instrument/瞬态光谱分析仪.html" target="_blank">
+<img alt="瞬态光谱分析仪 HELID FLA" loading="lazy" src="../img/product/SPCS_T04_System.jpg"/>
+<div class="bac"></div>
+<div class="detail">瞬态光谱分析仪 HELID FLA</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+</article>
+</div>
+</div>
+</div>
+</main>
+<div id="back-to-top">返回顶部</div>
+<footer class="footer_bac" role="contentinfo">
+<div class="footer_second">
+<div class="container" style="max-width: 990px;">
+<div class="row">
+<section class="col-md-12" role="search">
+<div class="pull-left copyright">
+              © 2012-2017 北京和力达科技  |  
+              <span>
+<a href="javascript:void(0);" style="text-decoration:none;">
+<img id="weixin_icon_footer" onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_footer').className = 'weixin_in_footer';" onmouseout="this.src='../img/wxicon.png'; document.getElementById('weixin_footer').className = 'weixin_footer';" src="../img/wxicon.png" style="height:19px;"/>
+</a>
+<div class="weixin_footer" id="weixin_footer">
+<img alt="北京和力达官方微信二维码" height="100" src="../img/HOLITA_weixin.jpg" title="北京和力达官方微信二维码" width="100"/>
+<div class="weixin_arrow_footer"></div>
+</div>
+                 | 
+                <a href="http://beian.miit.gov.cn">京ICP备17029478号-1</a>
+</span>
+</div>
+<div class="pull-right search">
+<input placeholder="Search Here ..." type="search"/>
+<button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</div>
+</section>
+</div>
+</div>
+</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../js/bootstrap.min.js" defer></script>
+<script src="../js/holder.js" defer></script>
+<script src="../js/index.js" defer></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // 一级和二级菜单展开/收起
+      document.querySelectorAll('.menu_header').forEach(function(header) {
+        header.addEventListener('click', function () {
+          this.classList.toggle('expanded');
+          var body = this.nextElementSibling;
+          if (body && body.classList.contains('menu_body')) {
+            body.classList.toggle('show');
+          }
+        });
+      });
+      document.querySelectorAll('.sub_menu_header').forEach(function(header) {
+        header.addEventListener('click', function () {
+          this.classList.toggle('expanded');
+          var body = this.nextElementSibling;
+          if (body && body.classList.contains('sub_menu_body')) {
+            body.classList.toggle('show');
+          }
+        });
+      });
+      // 菜单链接平滑滚动
+      document.querySelectorAll('.menu_body a, .sub_menu_body a').forEach(function(link) {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          var id = this.getAttribute('href').substring(1);
+          var target = document.getElementById(id);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+      // 返回顶部按钮
+      var backToTop = document.getElementById('back-to-top');
+      window.addEventListener('scroll', function () {
+        backToTop.style.display = (window.pageYOffset > 200) ? 'block' : 'none';
+      });
+      backToTop.addEventListener('click', function () {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+    
+    // 微信图标点击显示
+    function weixin_icon_nav_click() {
+      var weixinNav = document.getElementById('weixin_nav');
+      weixinNav.style.display = (weixinNav.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="HOLITA,	single photon counting module, SPAD, Geiger APD, PCIe,	SPCM-APD" />
+    <meta name="description" content="SPCM-APD模块具有非常高的光灵敏度和较高的量子效率，尤其在绿光及以上波长的光谱范围内具备比PMT更高的量子效率和检测灵敏度，SPCM-APD主要应用于检测极低光能量的应用场所，如量子密钥、量子通讯、宇宙射线检测、激光雷达、云高仪、颗粒物探测、傅里叶分析仪、高灵敏度荧光探测、光子相关光谱学研究等。”" />
+    <title>NEWS - Beijing HOLITA Co., Ltd</title>
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/bootstrap.jquery.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- replace the null img by data-src="holder.js/numberxnumber"-->
+    <script src="../js/holder.js"></script>
+    <script src="../js/index.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv/3.7.2/html5shiv.3.7.2.min.js"></script>
+      <script src="../js/respond.js/1.4.2/respond.1.4.2.min.js"></script>
+    <![endif]-->
+    <style>
+        .xwzx_bac {
+            background-image: url(../img/xwzx_body_bac.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center top;
+            background-position-x: center;
+            background-position-y: top;
+            background-repeat: no-repeat no-repeat;
+            background-color: #FFFFFF;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="xwzx_bac"></div>
+
+            <!--the header begin-->
+            <header role="banner">
+
+                <!-- the nav begin -->
+                <div class="nav_first_1"></div>
+                <nav class="navbar-inverse nav_first" role="navigation">
+                    <div class="container" style="max-width: 1065px;">
+                        <div class="row">
+                            <div class="navbar-collapse ">
+                                <ul class="nav navbar-nav center-block col-md-12 col-sm-12 col-xs-12">
+                                     <li class="dropdown navbar-drowdown-width"><a href="index.html">HOME</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="about_us.html">ABOUT US</a></li>
+                                    <li class="dropdown navbar-drowdown-width selected "><a href="news.html">NEWS</a></li>
+                                    <li class="dropdown navbar-drowdown-width"><a href="product_en.html">PRODUCT</a></li>
+                                    <li class="dropdown navbar-drowdown-width "><a href="contact_us.html">CONTACT</a></li>
+                                    <li class="dropdown a_weixin"><a href="javascript:void(0);">
+                                        <img id="weixin_icon_nav" src="../img/wxicon.png" onclick="weixin_icon_nav_click();"
+                                            onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_nav').className = 'weixin_in_nav';"
+                                            onmouseout="this.src='../img/wxicon.png';document.getElementById('weixin_nav').className = 'weixin_nav';" /></a>
+                                        <div id="weixin_nav" class="weixin_nav">
+                                            <div class="weixin_arrow_nav"></div>
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100">
+                                        </div>
+                                    </li>
+                                    <script>
+                                        var i = 1;
+                                        function weixin_icon_nav_click() {
+                                            if (i % 2 != 0) {
+                                                document.getElementById('weixin_nav').style.display = 'inherit';
+                                            }
+                                            else {
+                                                document.getElementById('weixin_nav').style.display = '';
+                                            }
+                                            i++;
+                                        }
+                                    </script>
+                                    <li class="dropdown a_cn_en"><a href="../index.html">
+                                        <img src="../img/cn.png" title="中文" alt="中文" /></a></li>
+                                    <li class="dropdown a_cn_en"><a href="index.html">
+                                        <img src="../img/en.png" title="English" alt="English" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <!-- the nav end -->
+
+                <!-- the logo begin -->
+                <div id="logo" class="logo2">
+                    <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <div class=" col-xs-12 col-sm-12 col-md-12">
+                                <a href="../index.html">
+                                    <img alt="logo" src="../img/logo.png" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the logo end -->
+
+                <!-- the banner background begin -->
+                <style>
+                    .main_banner {
+                        /*background: #8ab3eb url(../img/main_banner_gif.gif) top center no-repeat;*/
+                        /*background: #fff url(../img/news_main_banner.jpg) top center no-repeat;*/
+                        /*background: #fff url(../img/aboutus_main_banner.jpg) top center no-repeat;*/
+                        width: 100%;
+                        height: 340px;
+                        margin-top: -45px;
+                    }
+
+                    .main {
+                        margin-top: -340px;
+                    }
+
+                    .banner {
+                        /*background: url(../img/news_main_banner_text.png) top right no-repeat;*/
+                        float: none;
+                        width: 960px;
+                        margin: 0 auto;
+                        height: 290px;
+                        position: relative;
+                        padding-top: 100px;
+                        padding-right: 50px;
+                        text-align: right;
+                    }
+                </style>
+                <div class="container-fluid">
+                    <div class="row">
+                        <figure class="main_banner"></figure>
+                        <div class="main">
+                            <div class="banner">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- the banner background end -->
+
+            </header>
+            <!-- the header end -->
+
+            <!-- the article begin -->
+
+            <article role="main">
+
+                <style>
+                    .main_content {
+                        margin-top: 0px;
+                    }
+
+                    .box {
+                        margin-bottom: -1px;
+                        display: block;
+                        width: 100%;
+                        opacity: 1;
+                    }
+                </style>
+                <section>
+                    <div class="main_content">
+                        <div class="container-fluid" style="max-width: 1862px; background: url(../img/touming_61_bac.png) repeat">
+                            <div class="row">
+                                <div style="width: 100%;">
+                                    <div class="box article">
+                                        <style>
+                                            .left {
+                                                float: left;
+                                                width: 233px;
+                                                text-align: center;
+                                            }
+
+                                                .left img {
+                                                    width: 233px;
+                                                    padding: 5px;
+                                                    border: 1px solid #ddd;
+                                                }
+
+                                            .right {
+                                                float: right;
+                                                width: 687px;
+                                                padding-left: 20px;
+                                            }
+
+                                            .news_img {
+                                                position: absolute;
+                                                z-index: 2;
+                                                top: 130px;
+                                                left: 725px;
+                                            }
+                                        </style>
+                                        <div style="height: auto; max-width: 1862px; margin: 0 auto;">
+
+                                            <div style="margin: 10px 0 0 0;">
+                                                <div class="clearfix"></div>
+                                                <div style="padding: 0;">
+                                                    <div class="panel-group" id="accordion">
+                                                        
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h2 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                                       href="#news26">
+                                                                        <span>&nbsp;2017.05.17&nbsp;&nbsp;</span>Beijing HOLITA provide SPCM-APD series Single Photon Counting Module
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="news26" class="panel-collapse collapse in">
+                                                                <div class="panel-body">
+                                                                    <div class="left">
+                                                                        <a href="#">
+                                                                            <img class=" img-responsive" style="margin: 0 auto;" src="../img/news/spcm-apd.png" data-src="holder.js/221x166" title="北京和力达科技推出SPCM-APD模块助力国内光电检测技术应用快速发展" alt="北京和力达科技SPCM-APD模块助力国内光电检测技术应用快速发展" />
+                                                                        </a>
+                                                                        <br />
+                                                                    </div>
+                                                                    <div class="right">
+
+                                                                        <p>HOLITA’ newly improved SPCM-S-APD series Single Photon Counting Module APD operated in the Geiger mode, are used to detect single photos over the wavelength range of 350nm to 1060nm. The SPCM-S-APD series has been developed to offer a unique combination of high quantum efficiency, wide dynamic range and ease of use for photon counting applications.</p>
+                                                                       
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        
+
+                                                        
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h2 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                                        href="#news20"><span>&nbsp;2016.06.16&nbsp;&nbsp;</span>Beijing HOLITA Technology Co., Ltd being a partner of KEYSIGHT  
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="news20" class="panel-collapse collapse">
+                                                                <div class="panel-body">
+                                                                    <div class="left">
+                                                                        <img class=" img-responsive" src="../img/news/keysight.png" data-src="holder.js/221x166" alt="成为是德科技有限公司的服务商" /></a>
+                                                                       
+                                                                    </div>
+                                                                    <div class="right">
+
+                                                                        <p>
+                                                                            From 2016.6.16, Beijing HOLITA Technology Co., Ltd being a partner of KEYSIGHT. 
+                                                                        </p>
+
+                                                                     
+                                                                        <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">
+                                                                <h2 class="panel-title">
+                                                                    <a data-toggle="collapse" data-parent="#accordion"
+                                                                        href="#news4"><span>&nbsp;From 2015.07.17&nbsp;&nbsp;</span>Beijing HOLITA provide High Speed PCIe-ADC and PCIe-DAC Card
+                                                                    </a>
+                                                                </h2>
+                                                            </div>
+                                                            <div id="news4" class="panel-collapse collapse ">
+                                                                <div class="panel-body">
+                                                                    <div class="left">
+                                                                        <img class=" img-responsive" src="../img/news/ADC&PCIe_1.jpg" data-src="holder.js/221x166" alt="高速ADC采集板卡" />
+                                                                    </div>
+                                                                    <div class="right">
+                                                                      <p> Beijing HOLITA provide High Speed PCIe-ADC and PCIe-DAC Card </p>
+                                                                      <div class="clearfix"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                       
+                                                    </div>
+                                                    <div style="padding: 0 0; text-align: center;">
+                                                        <!--<button type="button" style="border: none; width: 25px; height: 25px; background-image: url(../img/previous.png)"></button>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                        <button type="button" style="border: none; width: 25px; height: 25px; background-image: url(../img/next.png)"></button>-->
+                                                    </div>
+
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </div>
+
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+            <!-- the article end -->
+
+
+            <!-- the footer begin -->
+            <footer role="contentinfo" class="footer_bac" style="margin-top: -1px;">
+<div class="footer_second">
+          <div class="container" style="max-width: 990px;">
+                        <div class="row">
+                            <section role="search " class=" col-md-12 col-sm-12 col-xs-12">
+                                <div class="pull-left copyright" style="">
+                                   ©&nbsp;2012-2017&nbsp;Beijing HOLITA Technology Co., Ltd&nbsp; &nbsp; | &nbsp; 
+                                        <div style="display:inline;">
+                                        <a href="javascript:void(0);" style="text-decoration:none;">
+                                         <img id="weixin_icon_footer" style="height:19px;" src="../img/wxicon.png"
+                                            onmousemove="this.src='../img/wxicon2.png'; document.getElementById('weixin_footer').className = 'weixin_in_footer';"
+                                            onmouseout="this.src='../img/wxicon.png';document.getElementById('weixin_footer').className = 'weixin_footer';" /></a>
+                                        <div id="weixin_footer" class="weixin_footer">                                            
+                                            <img src="../img/HOLITA_weixin.jpg" width="100" height="100" title="北京和力达官方微信二维码" alt="北京和力达官方微信二维码">
+                                            <div class="weixin_arrow_footer"></div>
+                                        </div>
+                                       &nbsp; |&nbsp; <a href="http://beian.miit.gov.cn"> 京ICP备17029478号-1</a> &nbsp;
+                                    </div>
+                                </div>
+                                <div class="pull-right search">
+                                    <input type="search" placeholder="Search Here ..." style="" />
+                                    <button type="submit"><span class="glyphicon glyphicon-search"></span></button>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- the footer end -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
